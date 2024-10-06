@@ -228,7 +228,6 @@ color: white;
 
 footer a:hover {
 color:  #fa573a;
-font-size: 3em;
 }
 /*Flecha simulacion para llegar a top*/
 .icon-flecha  {
@@ -238,6 +237,12 @@ position: fixed;
 bottom: 1.25em;
 right: 1.25em;
 font-size: 300%;
+
+}
+
+
+.icon-flecha:hover{
+    transform: translateY(2px) scale(1);
 }
 
 
@@ -311,4 +316,25 @@ font-size: 300%;
     footer {
         padding: 0.5em 0; 
     }
+
+
+
+    footer a:hover {
+        color:  #fa573a;
+        }
+
+
+        .icon-flecha  {
+            display: block;
+            color:  #fa573a;;
+            position: fixed;
+            bottom: 1.25em;
+            right: 1.25em;
+            font-size: 250%;
+            }
+
+
+            .icon-flecha:hover{
+                transform: translateY(3px) scale(1);
+            }
 }
