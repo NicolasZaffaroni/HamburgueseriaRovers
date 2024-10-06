@@ -1,4 +1,6 @@
 
+
+/*Estructura basica */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -14,9 +16,9 @@ html, body {
 }
 
 
-
+/*Banner de contacto*/
 .container {
-    width: 100%;
+    max-width:  100%;
     display: flex;
     justify-content: space-around;
     background-color: #21242e;
@@ -49,7 +51,7 @@ ul {
     margin-right: 10px;       
     font-size: 1.2em;        
 }
-
+/*Nav-bar */
 .container-nav {
     padding: 20px;
 }
@@ -57,7 +59,10 @@ ul {
 .nav-content {
     display: flex;
     flex-flow: wrap;
+    align-items: center;
     justify-content: space-between;
+    margin:  0px 97px;
+    
 }
 
 .logo {
@@ -82,8 +87,12 @@ ul {
 .list-item-nav:hover {
     color: #fa573a;
 }
+.list-item-nav{
+    width: 100%;
+    text-align: center;
+}
 
-
+/*Section Burger*/
 .section {
     background-image: url('../assets/images/fondo.jpg');
     background-color: #999;
@@ -91,10 +100,115 @@ ul {
     background-size: cover;
     background-position: center center;
     background-blend-mode: multiply;
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;  
+    align-items: flex-start; 
+    padding-left: 117px;
+    border: transparent 1px black;
+}
+
+
+.section .container-burguer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
 }
 
 
 
+.h1 {
+    font-family: "Handlee", cursive;
+    font-size: 2em;
+    margin: 5px 0px;
+    color: white;
+}
+
+.h2 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    color: #fa573a;
+    font-size: 1.25em;
+    margin: 20px 0px;
+
+}
+.container-burguer p{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    color: white;
+    font-size: 18px;
+}
+
+.section div {
+    text-align: left;   
+}
+
+
+.carta {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    display: inline-block;        
+    background-color: #fa573a;
+    margin: 16px 0px;
+    padding: 1.15em;
+    color: white;
+    text-decoration: none;
+    border: 1px solid #fa573a;
+    text-align: center;           
+    vertical-align: middle;       
+}
+
+
+
+.carta:hover {
+    background-color: transparent;
+    color:#fa573a ;
+}
+
+.carta i {
+    transition: 1s;
+}
+
+.carta:hover i {
+    transform: translateX(5px) scale(1.20);
+}
+
+
+.container-burguer ul a:hover{
+        color: #fa573a;
+        font-size: 3em;
+    }
+
+
+    .list-carta {
+        display: flex;
+        justify-content: flex-start;  
+        gap: 20px;
+        list-style: none;
+        padding: 0;
+        margin-top: 20px;
+    }
+    
+    .list-carta li {
+        margin: 0;              
+    }
+    
+    .icons { 
+        color: white;           
+        font-size: 2em;          
+        text-decoration: none;   
+        transition: color 1s;    
+    }
+    
+    .icons:hover {
+        color: #fa573a;          
+        font-size: 2.5em;        
+        transition: 0.3s ease;   
+    }
+    
+/*Footer */
 footer {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -113,7 +227,8 @@ color: white;
 }
 
 footer a:hover {
-color:  #fa573a;;
+color:  #fa573a;
+font-size: 3em;
 }
 
 .flecha a {
