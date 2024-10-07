@@ -216,7 +216,6 @@ footer {
     padding: 1.25em 0em;
     text-align: center;
     color: white;
-    position: fixed;
     width: 100%;
     bottom: 0;
 }
@@ -245,8 +244,89 @@ font-size: 300%;
     transform: translateY(2px) scale(1);
 }
 
+/*Main con Section */
+
+.section-main-h2{
+    padding: 2.125em 1.5em;
+}
+
+.container-service{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    width: 100%;
+}
 
 
+.section-main-h2 h2{
+    color: black;
+    font-family: "Handlee", cursive;
+    font-optical-sizing: auto;
+    font-size: 2em;
+    text-align: center;
+}
+
+.section-main-h2 span{
+    color:#fa573a;
+    font-family: "Handlee", cursive;
+    font-optical-sizing: auto;
+    font-size: 2em;
+    text-align: center;
+}
+
+
+
+.h3-title{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    color:black;
+    font-weight: 700;
+    font-size: 1em;
+    margin: 0.3em 0;
+
+}
+
+.p-texto{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    color:black;
+    font-size: 0.95em;
+    margin: 0.5em 0em;
+    line-height: 1.25em;
+    font-size: bold;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    padding: 20px;
+}
+
+.grid-container div {
+    border-left: 1px solid #ccc;
+    padding: 15px;
+}
+
+
+a {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    text-decoration: none;
+    color:#fa573a;
+}
+
+
+.icons-service{
+    color:#fa573a;
+    font-size: 1.5em;
+    border: 1px solid #fa573a;
+    padding: 5px;
+    border-radius: 2px;
+
+
+
+    
+}
 /*Responsive Para Celular*/
 
 /* Media Queries para Responsividad */
@@ -337,4 +417,42 @@ font-size: 300%;
             .icon-flecha:hover{
                 transform: translateY(3px) scale(1);
             }
+
+
+            .grid-container {
+                grid-template-columns: 1fr; 
+                padding: 10px;
+            }
+        
+            .section-main-h2 {
+                padding: 1.5em 1em;
+            }
+        
+            .section-main-h2 h2, .section-main-h2 span {
+                font-size: 1.5em; 
+            }
+        
+            .h3-title {
+                font-size: 1.2em; 
+            }
+        
+            .p-texto {
+                font-size: 0.9em; 
+            }
+        
+            .grid-container div {
+                border-left: none; 
+                border-top: 1px solid #ccc; 
+                padding: 10px;
+            }
+        
+            .icons-service {
+                font-size: 1.2em; 
+                padding: 4px;
+            }
+        
+            a {
+                font-size: 0.9em; 
+            }
+        
 }
